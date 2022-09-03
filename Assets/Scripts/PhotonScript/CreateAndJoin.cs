@@ -39,6 +39,8 @@ public class CreateAndJoin : MonoBehaviourPunCallbacks
         lobbyPanel.SetActive(false);
         var player = PhotonNetwork.Instantiate(playerPref.name, desiredSpawnPos, Quaternion.identity);
         MissileController.Instance.CreatePool();
+        SFXController.Instance.InıtMusic();
+
     }
 
 

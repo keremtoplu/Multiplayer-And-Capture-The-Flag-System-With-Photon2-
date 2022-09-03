@@ -10,10 +10,6 @@ public class Movement : MonoBehaviour
     private float speed;
 
     private PhotonView view;
-    private Vector3 actualPosition;
-    private Quaternion actualRotation;
-
-    public Vector3 ActualPosition => actualPosition;
 
     private void Start()
     {
