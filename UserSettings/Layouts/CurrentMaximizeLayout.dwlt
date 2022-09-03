@@ -249,23 +249,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0e21ffff6421ffff4825ffff4a3efffff84bffff1295ffff6895ffff4c99ffff44f3ffff9af3ffff7ef7ffff32fbffff7068000098680000
+      m_SelectedIDs: 62970000
+      m_LastClickedID: 38754
+      m_ExpandedIDs: fcc1fcfff41afdff0e21ffff6421ffff4825ffff4a3efffff84bffff1295ffff6895ffff4c99ffff44f3ffff9af3ffff7ef7ffff32fbfffff4ffffff706800009868000032970000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Main Camera
+        m_OriginalName: Main Camera
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 38754
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 6}
       m_SearchString: 
@@ -410,7 +410,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 0
+      displayed: 1
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -526,9 +526,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -32.579422, y: -13.985899, z: -46.414955}
+    m_Target: {x: -37.40506, y: -13.231113, z: -37.19379}
     speed: 2
-    m_Value: {x: -32.579422, y: -13.985899, z: -46.414955}
+    m_Value: {x: -37.40506, y: -13.231113, z: -37.19379}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -575,13 +575,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.33810848, y: 0.5664737, z: -0.27363804, w: 0.6999376}
+    m_Target: {x: -0.27572381, y: 0.16166681, z: -0.047103234, w: -0.9463754}
     speed: 2
-    m_Value: {x: 0.33810845, y: 0.56647366, z: -0.273638, w: 0.6999375}
+    m_Value: {x: -0.27565217, y: 0.16308579, z: -0.047516648, w: -0.9461295}
   m_Size:
-    m_Target: 64.11291
+    m_Target: 36.371376
     speed: 2
-    m_Value: 64.11291
+    m_Value: 34.805145
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -729,22 +729,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/PhotonScript
+    - Assets/Scripts/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/PhotonScript
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\GitHub\DigiAgeOrganizationGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 181.40002}
-    m_SelectedIDs: 5a610000
-    m_LastClickedID: 24922
-    m_ExpandedIDs: 000000003461000036610000386100003a61000000ca9a3b
+    scrollPos: {x: 0, y: 5.4000244}
+    m_SelectedIDs: 5c610000
+    m_LastClickedID: 24924
+    m_ExpandedIDs: 00000000346100003661000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -772,7 +772,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003461000036610000386100003a61000000ca9a3b
+    m_ExpandedIDs: 000000003461000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -797,8 +797,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 62970000
+    m_LastClickedInstanceID: 38754
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:

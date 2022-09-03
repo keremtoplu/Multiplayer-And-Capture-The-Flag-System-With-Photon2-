@@ -30,11 +30,11 @@ public class Movement : MonoBehaviour
             }
             if (Input.GetKey("a"))
             {
-                transform.position -= new Vector3(speed * Time.deltaTime, 0, 0);
+                transform.Rotate(new Vector3(0, transform.rotation.y + 1f, 0), Space.Self);
             }
             if (Input.GetKey("d"))
             {
-                transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
+                transform.rotation = Quaternion.Euler(0, transform.rotation.y + 2f, 0);
             }
             if (Input.GetKey("space"))
                 MissileController.Instance.Fire();
