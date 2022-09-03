@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
+
 public class Movement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
 
     private PhotonView view;
+    private Vector3 actualPosition;
+    private Quaternion actualRotation;
+
+    public Vector3 ActualPosition => actualPosition;
 
     private void Start()
     {
         view = GetComponent<PhotonView>();
     }
+
     private void Update()
     {
         if (view.IsMine)
@@ -34,7 +40,10 @@ public class Movement : MonoBehaviour
             {
                 transform.position += new Vector3(speed * Time.deltaTime, 0, 0);
             }
+            if (Input.GetKey("space"))
+                MissileController.Instance.Fire();
         }
 
     }
+
 }

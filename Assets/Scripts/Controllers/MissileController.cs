@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
+using System;
 
-public class MissileController : MonoBehaviour
+public class MissileController : Singleton<MissileController>
 {
 
     [SerializeField]
@@ -12,33 +14,27 @@ public class MissileController : MonoBehaviour
     private int missileCount;
 
     [SerializeField]
-    private Transform missilePoint;
+    private Movement player;
 
+    [SerializeField]
     private Queue<GameObject> pool;
 
-
-    private void Start()
+    public void CreatePool()
     {
         pool = new Queue<GameObject>();
         for (int i = 0; i < missileCount; i++)
         {
-            var missile = Instantiate(missilePrefab, missilePoint.position, Quaternion.identity);
+            var missile = PhotonNetwork.Instantiate(missilePrefab.name, transform.position, Quaternion.identity);
             missile.SetActive(false);
             pool.Enqueue(missile);
         }
-
-    }
-
-    private void Update()
-    {
-        if (Input.GetKey("space"))
-            Fire();
     }
 
     public void Fire()
     {
         var missile = pool.Dequeue();
-        missile.transform.position = missilePoint.position;
+        var missilePoint = GameObject.Find("MissilePoint");
+        missile.transform.position = missilePoint.transform.position;
         missile.SetActive(true);
         pool.Enqueue(missile);
     }

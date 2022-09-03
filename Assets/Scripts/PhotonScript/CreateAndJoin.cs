@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine.UI;
 using TMPro;
 public class CreateAndJoin : MonoBehaviourPunCallbacks
@@ -14,11 +15,14 @@ public class CreateAndJoin : MonoBehaviourPunCallbacks
     private GameObject lobbyPanel;
     [SerializeField]
     private GameObject playerPref;
+
     [SerializeField]
     private GameObject enviroment;
 
     [SerializeField]
-    private Vector2 desiredSpawnPos;
+    private Vector3 desiredSpawnPos;
+
+    private List<GameObject> InstantList;
     public void CreateRoom()
     {
         PhotonNetwork.CreateRoom(createInputName.text);
@@ -33,6 +37,9 @@ public class CreateAndJoin : MonoBehaviourPunCallbacks
     {
         enviroment.SetActive(true);
         lobbyPanel.SetActive(false);
-        PhotonNetwork.Instantiate(playerPref.name, desiredSpawnPos, Quaternion.identity);
+        var player = PhotonNetwork.Instantiate(playerPref.name, desiredSpawnPos, Quaternion.identity);
+        MissileController.Instance.CreatePool();
     }
+
+
 }

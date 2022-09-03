@@ -11,6 +11,7 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
     private GameObject enviroment;
     [SerializeField]
     private GameObject loadingPanel;
+
     void Start()
     {
         loadingPanel.SetActive(true);
