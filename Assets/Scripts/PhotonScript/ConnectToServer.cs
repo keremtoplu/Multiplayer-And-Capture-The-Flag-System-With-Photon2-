@@ -7,15 +7,13 @@ public class ConnectToServer : MonoBehaviourPunCallbacks
 {
     [SerializeField]
     private GameObject lobbyPanel;
-    [SerializeField]
-    private GameObject enviroment;
+
     [SerializeField]
     private GameObject loadingPanel;
 
     void Start()
     {
         loadingPanel.SetActive(true);
-        enviroment.SetActive(false);
         lobbyPanel.SetActive(false);
         PhotonNetwork.ConnectUsingSettings();
     }
